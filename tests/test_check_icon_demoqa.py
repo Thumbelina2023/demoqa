@@ -5,13 +5,12 @@ import time
 
 
 def test_check_icon(browser):
-    demoqa_page = DemoQa(browser) # присваеваем обьекту класс
+    demoqa_page = DemoQa(browser) # присваеваем обьекту класс. browser всегда прописывается только в тестах, а в остальных driver
     demoqa_page.visit() # входит на страницу
-    demoqa_page.click_on_the_icon()
-
+    demoqa_page.icon.click() # страница - элемент -метод. так будет всегда обращение
 
     assert  demoqa_page.equal_url()
-    assert demoqa_page.exist_icon() # вызывает проверку элемента
+    assert demoqa_page.icon.exist() # вызывает проверку элемента
 
 
 
