@@ -12,6 +12,10 @@ class ElementsPage(BasePage):
         self.icon = WebElement(driver, '#app > header > a')
         self.said_bar = WebElement(driver, 'div:nth-child(1) > span > div')
         self.said_bar_textbox = WebElement(driver, 'div:nth-child(1) > div > ul > #item-0 > span')
+        self.btn_sidebar_first_checkbox = WebElement(driver, 'div:nth-child(1) > div > ul > #item-1 > span')
+        self.btn_sidebar_first_checkbox2 = WebElement(driver, 'div:nth-child(1) > div > ul > #item-2 > span')
+        self.btn_elem = WebElement(driver, 'div:nth-child(1) > div >ul > li')
+        self.elem_nav = WebElement(driver, 'div > nav')
 
         #self.footer_tx = WebElement(driver, '#app > footer > span')
 
